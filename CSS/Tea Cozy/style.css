@@ -1,0 +1,99 @@
+body { /*needs to be body and not html since the body is the closest parent to the header */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0;
+}
+
+.container img {
+    height: 50px;
+    margin-left: 10px; 
+}
+
+header {
+    height: 69px;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    border: 1px solid seashell;
+    background-color: black;
+    align-items: center;
+}
+
+.menu {
+    flex-grow: 1; /*expands the area and pushes the logo to the left */
+    text-align: right;
+}
+
+.menu span {
+    display: inline-block;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+main {
+    width: 1200px;
+    margin: auto; /* centres all the content within the main element. */
+    /* 69px + the 1px border = 70px */
+    padding-top: 70px; /* can't use margin-top since margin has been set to auto */
+}
+
+.mission {
+    background-image: url("./images/img-mission-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;   
+}
+
+.mission .text {
+    background-color: black;
+    width: 100%;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.images img {
+    width: 300px;
+    height: 200px;
+}
+
+.container .boxes {
+    padding: 5px;
+}
+
+.locations {
+    background-image: url("./images/img-locations-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
+    padding-top: 50px;
+    
+}
+
+.boxes div {
+    flex-basis: 280px; /* instead of width since we're applying flex rules */
+    padding: 10px; /* to add to the width of the black box */
+    margin: 15px 20px; 
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer {
+    height: 200px;
+}
+
+aside {
+    margin-left: 20px;
+    text-align: left;
+}
